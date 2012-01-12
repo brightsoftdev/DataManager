@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FE4B36414BEAB370023094C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE4B36314BEAB370023094C /* UIKit.framework */; };
+		7FE4B36614BEAB370023094C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE4B36514BEAB370023094C /* Foundation.framework */; };
+		7FE4B36814BEAB370023094C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE4B36714BEAB370023094C /* CoreGraphics.framework */; };
+		7FE4B36E14BEAB370023094C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FE4B36C14BEAB370023094C /* InfoPlist.strings */; };
+		7FE4B37014BEAB370023094C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4B36F14BEAB370023094C /* main.m */; };
+		7FE4B37414BEAB370023094C /* DataManagerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4B37314BEAB370023094C /* DataManagerAppDelegate.m */; };
+		7FE4B37714BEAB370023094C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE4B37514BEAB370023094C /* MainWindow.xib */; };
+		7FE4B37A14BEAB370023094C /* DataManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4B37914BEAB370023094C /* DataManagerViewController.m */; };
+		7FE4B37D14BEAB370023094C /* DataManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE4B37B14BEAB370023094C /* DataManagerViewController.xib */; };
+		7FE4B38514BEAB370023094C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE4B38414BEAB370023094C /* SenTestingKit.framework */; };
+		7FE4B38614BEAB370023094C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE4B36314BEAB370023094C /* UIKit.framework */; };
+		7FE4B38714BEAB370023094C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE4B36514BEAB370023094C /* Foundation.framework */; };
+		7FE4B38814BEAB370023094C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE4B36714BEAB370023094C /* CoreGraphics.framework */; };
+		7FE4B39014BEAB380023094C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FE4B38E14BEAB380023094C /* InfoPlist.strings */; };
+		7FE4B39214BEAB380023094C /* DataManagerTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 7FE4B39114BEAB380023094C /* DataManagerTests.h */; };
+		7FE4B39414BEAB380023094C /* DataManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4B39314BEAB380023094C /* DataManagerTests.m */; };
+		7FE4B3B414BEAC1E0023094C /* BlockDataMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4B3A014BEAC1E0023094C /* BlockDataMapper.m */; };
+		7FE4B3B514BEAC1E0023094C /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4B3A214BEAC1E0023094C /* DataManager.m */; };
+		7FE4B3B614BEAC1E0023094C /* DataMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4B3A414BEAC1E0023094C /* DataMapper.m */; };
+		7FE4B3B714BEAC1E0023094C /* LocalDataMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4B3A614BEAC1E0023094C /* LocalDataMapper.m */; };
+		7FE4B3B814BEAC1E0023094C /* RestDataMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4B3A814BEAC1E0023094C /* RestDataMapper.m */; };
+		7FE4B3B914BEAC1E0023094C /* DGLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4B3AB14BEAC1E0023094C /* DGLogger.m */; };
+		7FE4B3BA14BEAC1E0023094C /* HServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4B3AE14BEAC1E0023094C /* HServer.m */; };
+		7FE4B3BB14BEAC1E0023094C /* LocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4B3B114BEAC1E0023094C /* LocalStorage.m */; };
+		7FE4B3BC14BEAC1E0023094C /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4B3B314BEAC1E0023094C /* SFHFKeychainUtils.m */; };
+		7FE4B3BE14BEAC350023094C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE4B3BD14BEAC350023094C /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FE4B38914BEAB370023094C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FE4B35614BEAB370023094C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FE4B35E14BEAB370023094C;
+			remoteInfo = DataManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7FE4B35F14BEAB370023094C /* DataManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE4B36314BEAB370023094C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7FE4B36514BEAB370023094C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7FE4B36714BEAB370023094C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7FE4B36B14BEAB370023094C /* DataManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DataManager-Info.plist"; sourceTree = "<group>"; };
+		7FE4B36D14BEAB370023094C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7FE4B36F14BEAB370023094C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7FE4B37114BEAB370023094C /* DataManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataManager-Prefix.pch"; sourceTree = "<group>"; };
+		7FE4B37214BEAB370023094C /* DataManagerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManagerAppDelegate.h; sourceTree = "<group>"; };
+		7FE4B37314BEAB370023094C /* DataManagerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManagerAppDelegate.m; sourceTree = "<group>"; };
+		7FE4B37614BEAB370023094C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		7FE4B37814BEAB370023094C /* DataManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManagerViewController.h; sourceTree = "<group>"; };
+		7FE4B37914BEAB370023094C /* DataManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManagerViewController.m; sourceTree = "<group>"; };
+		7FE4B37C14BEAB370023094C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DataManagerViewController.xib; sourceTree = "<group>"; };
+		7FE4B38314BEAB370023094C /* DataManagerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataManagerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE4B38414BEAB370023094C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7FE4B38D14BEAB380023094C /* DataManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DataManagerTests-Info.plist"; sourceTree = "<group>"; };
+		7FE4B38F14BEAB380023094C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7FE4B39114BEAB380023094C /* DataManagerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManagerTests.h; sourceTree = "<group>"; };
+		7FE4B39314BEAB380023094C /* DataManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManagerTests.m; sourceTree = "<group>"; };
+		7FE4B39F14BEAC1E0023094C /* BlockDataMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockDataMapper.h; sourceTree = "<group>"; };
+		7FE4B3A014BEAC1E0023094C /* BlockDataMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockDataMapper.m; sourceTree = "<group>"; };
+		7FE4B3A114BEAC1E0023094C /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		7FE4B3A214BEAC1E0023094C /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		7FE4B3A314BEAC1E0023094C /* DataMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMapper.h; sourceTree = "<group>"; };
+		7FE4B3A414BEAC1E0023094C /* DataMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMapper.m; sourceTree = "<group>"; };
+		7FE4B3A514BEAC1E0023094C /* LocalDataMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalDataMapper.h; sourceTree = "<group>"; };
+		7FE4B3A614BEAC1E0023094C /* LocalDataMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalDataMapper.m; sourceTree = "<group>"; };
+		7FE4B3A714BEAC1E0023094C /* RestDataMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestDataMapper.h; sourceTree = "<group>"; };
+		7FE4B3A814BEAC1E0023094C /* RestDataMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestDataMapper.m; sourceTree = "<group>"; };
+		7FE4B3AA14BEAC1E0023094C /* DGLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGLogger.h; sourceTree = "<group>"; };
+		7FE4B3AB14BEAC1E0023094C /* DGLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGLogger.m; sourceTree = "<group>"; };
+		7FE4B3AD14BEAC1E0023094C /* HServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HServer.h; sourceTree = "<group>"; };
+		7FE4B3AE14BEAC1E0023094C /* HServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HServer.m; sourceTree = "<group>"; };
+		7FE4B3B014BEAC1E0023094C /* LocalStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalStorage.h; sourceTree = "<group>"; };
+		7FE4B3B114BEAC1E0023094C /* LocalStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalStorage.m; sourceTree = "<group>"; };
+		7FE4B3B214BEAC1E0023094C /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		7FE4B3B314BEAC1E0023094C /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		7FE4B3BD14BEAC350023094C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FE4B35C14BEAB370023094C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE4B3BE14BEAC350023094C /* Security.framework in Frameworks */,
+				7FE4B36414BEAB370023094C /* UIKit.framework in Frameworks */,
+				7FE4B36614BEAB370023094C /* Foundation.framework in Frameworks */,
+				7FE4B36814BEAB370023094C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FE4B37F14BEAB370023094C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE4B38514BEAB370023094C /* SenTestingKit.framework in Frameworks */,
+				7FE4B38614BEAB370023094C /* UIKit.framework in Frameworks */,
+				7FE4B38714BEAB370023094C /* Foundation.framework in Frameworks */,
+				7FE4B38814BEAB370023094C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FE4B35414BEAB370023094C = {
+			isa = PBXGroup;
+			children = (
+				7FE4B3BD14BEAC350023094C /* Security.framework */,
+				7FE4B39D14BEAB480023094C /* Libs */,
+				7FE4B36914BEAB370023094C /* DataManager */,
+				7FE4B38B14BEAB370023094C /* DataManagerTests */,
+				7FE4B36214BEAB370023094C /* Frameworks */,
+				7FE4B36014BEAB370023094C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FE4B36014BEAB370023094C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FE4B35F14BEAB370023094C /* DataManager.app */,
+				7FE4B38314BEAB370023094C /* DataManagerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FE4B36214BEAB370023094C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FE4B36314BEAB370023094C /* UIKit.framework */,
+				7FE4B36514BEAB370023094C /* Foundation.framework */,
+				7FE4B36714BEAB370023094C /* CoreGraphics.framework */,
+				7FE4B38414BEAB370023094C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FE4B36914BEAB370023094C /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				7FE4B37214BEAB370023094C /* DataManagerAppDelegate.h */,
+				7FE4B37314BEAB370023094C /* DataManagerAppDelegate.m */,
+				7FE4B37514BEAB370023094C /* MainWindow.xib */,
+				7FE4B37814BEAB370023094C /* DataManagerViewController.h */,
+				7FE4B37914BEAB370023094C /* DataManagerViewController.m */,
+				7FE4B37B14BEAB370023094C /* DataManagerViewController.xib */,
+				7FE4B36A14BEAB370023094C /* Supporting Files */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		7FE4B36A14BEAB370023094C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FE4B36B14BEAB370023094C /* DataManager-Info.plist */,
+				7FE4B36C14BEAB370023094C /* InfoPlist.strings */,
+				7FE4B36F14BEAB370023094C /* main.m */,
+				7FE4B37114BEAB370023094C /* DataManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FE4B38B14BEAB370023094C /* DataManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FE4B39114BEAB380023094C /* DataManagerTests.h */,
+				7FE4B39314BEAB380023094C /* DataManagerTests.m */,
+				7FE4B38C14BEAB380023094C /* Supporting Files */,
+			);
+			path = DataManagerTests;
+			sourceTree = "<group>";
+		};
+		7FE4B38C14BEAB380023094C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FE4B38D14BEAB380023094C /* DataManagerTests-Info.plist */,
+				7FE4B38E14BEAB380023094C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FE4B39D14BEAB480023094C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				7FE4B39E14BEAC1E0023094C /* DataManager */,
+				7FE4B3A914BEAC1E0023094C /* DGLogger */,
+				7FE4B3AC14BEAC1E0023094C /* HServer */,
+				7FE4B3AF14BEAC1E0023094C /* LocalStorage */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		7FE4B39E14BEAC1E0023094C /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				7FE4B39F14BEAC1E0023094C /* BlockDataMapper.h */,
+				7FE4B3A014BEAC1E0023094C /* BlockDataMapper.m */,
+				7FE4B3A114BEAC1E0023094C /* DataManager.h */,
+				7FE4B3A214BEAC1E0023094C /* DataManager.m */,
+				7FE4B3A314BEAC1E0023094C /* DataMapper.h */,
+				7FE4B3A414BEAC1E0023094C /* DataMapper.m */,
+				7FE4B3A514BEAC1E0023094C /* LocalDataMapper.h */,
+				7FE4B3A614BEAC1E0023094C /* LocalDataMapper.m */,
+				7FE4B3A714BEAC1E0023094C /* RestDataMapper.h */,
+				7FE4B3A814BEAC1E0023094C /* RestDataMapper.m */,
+			);
+			name = DataManager;
+			path = Libs/DataManager;
+			sourceTree = "<group>";
+		};
+		7FE4B3A914BEAC1E0023094C /* DGLogger */ = {
+			isa = PBXGroup;
+			children = (
+				7FE4B3AA14BEAC1E0023094C /* DGLogger.h */,
+				7FE4B3AB14BEAC1E0023094C /* DGLogger.m */,
+			);
+			name = DGLogger;
+			path = Libs/DGLogger;
+			sourceTree = "<group>";
+		};
+		7FE4B3AC14BEAC1E0023094C /* HServer */ = {
+			isa = PBXGroup;
+			children = (
+				7FE4B3AD14BEAC1E0023094C /* HServer.h */,
+				7FE4B3AE14BEAC1E0023094C /* HServer.m */,
+			);
+			name = HServer;
+			path = Libs/HServer;
+			sourceTree = "<group>";
+		};
+		7FE4B3AF14BEAC1E0023094C /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				7FE4B3B014BEAC1E0023094C /* LocalStorage.h */,
+				7FE4B3B114BEAC1E0023094C /* LocalStorage.m */,
+				7FE4B3B214BEAC1E0023094C /* SFHFKeychainUtils.h */,
+				7FE4B3B314BEAC1E0023094C /* SFHFKeychainUtils.m */,
+			);
+			name = LocalStorage;
+			path = Libs/LocalStorage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FE4B35E14BEAB370023094C /* DataManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FE4B39714BEAB380023094C /* Build configuration list for PBXNativeTarget "DataManager" */;
+			buildPhases = (
+				7FE4B35B14BEAB370023094C /* Sources */,
+				7FE4B35C14BEAB370023094C /* Frameworks */,
+				7FE4B35D14BEAB370023094C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataManager;
+			productName = DataManager;
+			productReference = 7FE4B35F14BEAB370023094C /* DataManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FE4B38214BEAB370023094C /* DataManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FE4B39A14BEAB380023094C /* Build configuration list for PBXNativeTarget "DataManagerTests" */;
+			buildPhases = (
+				7FE4B37E14BEAB370023094C /* Sources */,
+				7FE4B37F14BEAB370023094C /* Frameworks */,
+				7FE4B38014BEAB370023094C /* Resources */,
+				7FE4B38114BEAB370023094C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FE4B38A14BEAB370023094C /* PBXTargetDependency */,
+			);
+			name = DataManagerTests;
+			productName = DataManagerTests;
+			productReference = 7FE4B38314BEAB370023094C /* DataManagerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FE4B35614BEAB370023094C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = bupt;
+			};
+			buildConfigurationList = 7FE4B35914BEAB370023094C /* Build configuration list for PBXProject "DataManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7FE4B35414BEAB370023094C;
+			productRefGroup = 7FE4B36014BEAB370023094C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FE4B35E14BEAB370023094C /* DataManager */,
+				7FE4B38214BEAB370023094C /* DataManagerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FE4B35D14BEAB370023094C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE4B36E14BEAB370023094C /* InfoPlist.strings in Resources */,
+				7FE4B37714BEAB370023094C /* MainWindow.xib in Resources */,
+				7FE4B37D14BEAB370023094C /* DataManagerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FE4B38014BEAB370023094C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE4B39014BEAB380023094C /* InfoPlist.strings in Resources */,
+				7FE4B39214BEAB380023094C /* DataManagerTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FE4B38114BEAB370023094C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FE4B35B14BEAB370023094C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE4B37014BEAB370023094C /* main.m in Sources */,
+				7FE4B37414BEAB370023094C /* DataManagerAppDelegate.m in Sources */,
+				7FE4B37A14BEAB370023094C /* DataManagerViewController.m in Sources */,
+				7FE4B3B414BEAC1E0023094C /* BlockDataMapper.m in Sources */,
+				7FE4B3B514BEAC1E0023094C /* DataManager.m in Sources */,
+				7FE4B3B614BEAC1E0023094C /* DataMapper.m in Sources */,
+				7FE4B3B714BEAC1E0023094C /* LocalDataMapper.m in Sources */,
+				7FE4B3B814BEAC1E0023094C /* RestDataMapper.m in Sources */,
+				7FE4B3B914BEAC1E0023094C /* DGLogger.m in Sources */,
+				7FE4B3BA14BEAC1E0023094C /* HServer.m in Sources */,
+				7FE4B3BB14BEAC1E0023094C /* LocalStorage.m in Sources */,
+				7FE4B3BC14BEAC1E0023094C /* SFHFKeychainUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FE4B37E14BEAB370023094C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE4B39414BEAB380023094C /* DataManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FE4B38A14BEAB370023094C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FE4B35E14BEAB370023094C /* DataManager */;
+			targetProxy = 7FE4B38914BEAB370023094C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7FE4B36C14BEAB370023094C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FE4B36D14BEAB370023094C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7FE4B37514BEAB370023094C /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FE4B37614BEAB370023094C /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		7FE4B37B14BEAB370023094C /* DataManagerViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FE4B37C14BEAB370023094C /* en */,
+			);
+			name = DataManagerViewController.xib;
+			sourceTree = "<group>";
+		};
+		7FE4B38E14BEAB380023094C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FE4B38F14BEAB380023094C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7FE4B39514BEAB380023094C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		7FE4B39614BEAB380023094C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FE4B39814BEAB380023094C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataManager/DataManager-Prefix.pch";
+				INFOPLIST_FILE = "DataManager/DataManager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7FE4B39914BEAB380023094C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataManager/DataManager-Prefix.pch";
+				INFOPLIST_FILE = "DataManager/DataManager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7FE4B39B14BEAB380023094C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DataManager.app/DataManager";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataManager/DataManager-Prefix.pch";
+				INFOPLIST_FILE = "DataManagerTests/DataManagerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7FE4B39C14BEAB380023094C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DataManager.app/DataManager";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataManager/DataManager-Prefix.pch";
+				INFOPLIST_FILE = "DataManagerTests/DataManagerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FE4B35914BEAB370023094C /* Build configuration list for PBXProject "DataManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FE4B39514BEAB380023094C /* Debug */,
+				7FE4B39614BEAB380023094C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FE4B39714BEAB380023094C /* Build configuration list for PBXNativeTarget "DataManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FE4B39814BEAB380023094C /* Debug */,
+				7FE4B39914BEAB380023094C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7FE4B39A14BEAB380023094C /* Build configuration list for PBXNativeTarget "DataManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FE4B39B14BEAB380023094C /* Debug */,
+				7FE4B39C14BEAB380023094C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FE4B35614BEAB370023094C /* Project object */;
+}
